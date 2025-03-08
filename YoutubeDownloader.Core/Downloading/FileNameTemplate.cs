@@ -1,7 +1,7 @@
 ﻿using System;
 using YoutubeDownloader.Core.Utils;
-using YoutubeExplode.Videos;
-using YoutubeExplode.Videos.Streams;
+using YoutubeExplodeNoPolytics.Videos;
+using YoutubeExplodeNoPolytics.Videos.Streams;
 
 namespace YoutubeDownloader.Core.Downloading;
 

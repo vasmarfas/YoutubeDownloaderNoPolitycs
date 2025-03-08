@@ -38,7 +38,6 @@ public class App : Application, IDisposable
 
         // Services
         services.AddSingleton<SettingsService>();
-        services.AddSingleton<UpdateService>();
 
         // View models
         services.AddTransient<MainViewModel>();

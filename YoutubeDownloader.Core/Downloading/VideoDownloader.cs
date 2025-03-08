@@ -6,10 +6,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using Gress;
 using YoutubeDownloader.Core.Utils;
-using YoutubeExplode;
-using YoutubeExplode.Converter;
-using YoutubeExplode.Videos;
-using YoutubeExplode.Videos.ClosedCaptions;
+using YoutubeExplodeNoPolytics;
+using YoutubeExplodeNoPolytics.Converter;
+using YoutubeExplodeNoPolytics.Videos;
+using YoutubeExplodeNoPolytics.Videos.ClosedCaptions;
 
 namespace YoutubeDownloader.Core.Downloading;
 

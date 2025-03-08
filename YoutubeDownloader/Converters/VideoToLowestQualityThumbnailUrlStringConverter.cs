@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Linq;
 using Avalonia.Data.Converters;
-using YoutubeExplode.Videos;
+using YoutubeExplodeNoPolytics.Videos;
 
 namespace YoutubeDownloader.Converters;
 

@@ -8,7 +8,7 @@ using Cogwheel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using YoutubeDownloader.Core.Downloading;
 using YoutubeDownloader.Framework;
-using Container = YoutubeExplode.Videos.Streams.Container;
+using Container = YoutubeExplodeNoPolytics.Videos.Streams.Container;
 
 namespace YoutubeDownloader.Services;
 
@@ -21,13 +21,6 @@ public partial class SettingsService()
         SerializerContext.Default
     )
 {
-    private bool _isUkraineSupportMessageEnabled = true;
-    public bool IsUkraineSupportMessageEnabled
-    {
-        get => _isUkraineSupportMessageEnabled;
-        set => SetProperty(ref _isUkraineSupportMessageEnabled, value);
-    }
-
     private ThemeVariant _theme;
     public ThemeVariant Theme
     {

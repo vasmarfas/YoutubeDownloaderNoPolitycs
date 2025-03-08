@@ -10,7 +10,7 @@ using YoutubeDownloader.Core.Downloading;
 using YoutubeDownloader.Framework;
 using YoutubeDownloader.Utils;
 using YoutubeDownloader.Utils.Extensions;
-using YoutubeExplode.Videos;
+using YoutubeExplodeNoPolytics.Videos;
 
 namespace YoutubeDownloader.ViewModels.Components;
 

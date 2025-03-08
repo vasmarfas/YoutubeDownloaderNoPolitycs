@@ -1,0 +1,132 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "YoutubeExplodeNoPolytics/7.0.0": {
+        "dependencies": {
+          "AngleSharp": "1.2.0",
+          "CSharpier.MsBuild": "0.30.6",
+          "Lazy.Fody": "1.11.0",
+          "Microsoft.NET.ILLink.Tasks": "9.0.2",
+          "Microsoft.SourceLink.GitHub": "8.0.0",
+          "PolyShim": "1.15.0"
+        },
+        "runtime": {
+          "YoutubeExplodeNoPolytics.dll": {}
+        }
+      },
+      "AngleSharp/1.2.0": {
+        "runtime": {
+          "lib/net8.0/AngleSharp.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "CSharpier.MsBuild/0.30.6": {
+        "runtime": {
+          "lib/net9.0/CSharpier.MsBuild.dll": {
+            "assemblyVersion": "0.30.6.0",
+            "fileVersion": "0.30.6.0"
+          }
+        }
+      },
+      "Fody/6.1.1": {},
+      "Lazy.Fody/1.11.0": {
+        "dependencies": {
+          "Fody": "6.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lazy.dll": {
+            "assemblyVersion": "1.11.0.0",
+            "fileVersion": "1.11.0.0"
+          }
+        }
+      },
+      "Microsoft.Build.Tasks.Git/8.0.0": {},
+      "Microsoft.NET.ILLink.Tasks/9.0.2": {},
+      "Microsoft.SourceLink.Common/8.0.0": {},
+      "Microsoft.SourceLink.GitHub/8.0.0": {
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "8.0.0",
+          "Microsoft.SourceLink.Common": "8.0.0"
+        }
+      },
+      "PolyShim/1.15.0": {}
+    }
+  },
+  "libraries": {
+    "YoutubeExplodeNoPolytics/7.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AngleSharp/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uF/PzSCVcb+b2nqVvHZbOqexoJ9R6QLjonugPf0PQl+0h7YKaFZeXyspctbHe5HGlx7/Iuk5BErtk+t63ac/ZA==",
+      "path": "anglesharp/1.2.0",
+      "hashPath": "anglesharp.1.2.0.nupkg.sha512"
+    },
+    "CSharpier.MsBuild/0.30.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m/KjEvc7f4+IGAL05F+tXwY5JHje6CeMjCc6mS4nlQlFJA36DM+UmoPCS5hDnLUw2s0aKMDoXdCxUrNe9PHBsA==",
+      "path": "csharpier.msbuild/0.30.6",
+      "hashPath": "csharpier.msbuild.0.30.6.nupkg.sha512"
+    },
+    "Fody/6.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i7vuMDp1LmatLaAXqfOrJt6U0lVSxAQFpjYcWmX+MEM8t6r4b8Z8NtwwcS3XbtQCDRey6QIAe3ujNoOTn7DQ1A==",
+      "path": "fody/6.1.1",
+      "hashPath": "fody.6.1.1.nupkg.sha512"
+    },
+    "Lazy.Fody/1.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IrV1hxlhZwzviLVHm2gHjUMN1Bh1ljl0UArJtA3ruAkL/WHKHmbzL4/Z8D4Qd9kzsW/KaME2aqfWRfTL9vvdbQ==",
+      "path": "lazy.fody/1.11.0",
+      "hashPath": "lazy.fody.1.11.0.nupkg.sha512"
+    },
+    "Microsoft.Build.Tasks.Git/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bZKfSIKJRXLTuSzLudMFte/8CempWjVamNUR5eHJizsy+iuOuO/k2gnh7W0dHJmYY0tBf+gUErfluCv5mySAOQ==",
+      "path": "microsoft.build.tasks.git/8.0.0",
+      "hashPath": "microsoft.build.tasks.git.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+KFnCLVPicEq99ko0tq+ycTvNLXHw0tImmTZjPloB/DOFLPT56KLfk5aS7wbgXRPzYhXTTBYLGaABea5mke77w==",
+      "path": "microsoft.net.illink.tasks/9.0.2",
+      "hashPath": "microsoft.net.illink.tasks.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.SourceLink.Common/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dk9JPxTCIevS75HyEQ0E4OVAFhB2N+V9ShCXf8Q6FkUQZDkgLI12y679Nym1YqsiSysuQskT7Z+6nUf3yab6Vw==",
+      "path": "microsoft.sourcelink.common/8.0.0",
+      "hashPath": "microsoft.sourcelink.common.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.SourceLink.GitHub/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G5q7OqtwIyGTkeIOAc3u2ZuV/kicQaec5EaRnc0pIeSnh9LUjj+PYQrJYBURvDt7twGl2PKA7nSN0kz1Zw5bnQ==",
+      "path": "microsoft.sourcelink.github/8.0.0",
+      "hashPath": "microsoft.sourcelink.github.8.0.0.nupkg.sha512"
+    },
+    "PolyShim/1.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m4JBGIoc5eChim8mNrjxGkfpZNCIgY6P2ShKLspXphfwp4xf6VupKCGS6G8LKa2HFH2RbF231qnyV2idWhPoNA==",
+      "path": "polyshim/1.15.0",
+      "hashPath": "polyshim.1.15.0.nupkg.sha512"
+    }
+  }
+}

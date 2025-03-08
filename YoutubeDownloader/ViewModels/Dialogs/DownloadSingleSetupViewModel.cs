@@ -12,7 +12,7 @@ using YoutubeDownloader.Services;
 using YoutubeDownloader.Utils;
 using YoutubeDownloader.Utils.Extensions;
 using YoutubeDownloader.ViewModels.Components;
-using YoutubeExplode.Videos;
+using YoutubeExplodeNoPolytics.Videos;
 
 namespace YoutubeDownloader.ViewModels.Dialogs;
 

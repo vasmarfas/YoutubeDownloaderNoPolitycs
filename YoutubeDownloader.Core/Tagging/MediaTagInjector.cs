@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using YoutubeDownloader.Core.Utils;
 using YoutubeDownloader.Core.Utils.Extensions;
-using YoutubeExplode.Videos;
+using YoutubeExplodeNoPolytics.Videos;
 
 namespace YoutubeDownloader.Core.Tagging;
 
@@ -20,7 +20,7 @@ public class MediaTagInjector
 
         mediaFile.SetComment(
             $"""
-            Downloaded using YoutubeDownloader (https://github.com/Tyrrrz/YoutubeDownloader)
+            Downloaded using YoutubeDownloader (https://github.com/vasmarfas/YoutubeDownloaderNoPolitycs)
             Video: {video.Title}
             Video URL: {video.Url}
             Channel: {video.Author.ChannelTitle}

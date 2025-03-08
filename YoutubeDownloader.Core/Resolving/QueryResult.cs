@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using YoutubeExplode.Videos;
+using YoutubeExplodeNoPolytics.Videos;
 
 namespace YoutubeDownloader.Core.Resolving;
 

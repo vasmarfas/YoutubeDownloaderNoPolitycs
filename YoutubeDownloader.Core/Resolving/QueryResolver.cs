@@ -6,11 +6,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using Gress;
 using YoutubeDownloader.Core.Utils;
-using YoutubeExplode;
-using YoutubeExplode.Channels;
-using YoutubeExplode.Common;
-using YoutubeExplode.Playlists;
-using YoutubeExplode.Videos;
+using YoutubeExplodeNoPolytics;
+using YoutubeExplodeNoPolytics.Channels;
+using YoutubeExplodeNoPolytics.Common;
+using YoutubeExplodeNoPolytics.Playlists;
+using YoutubeExplodeNoPolytics.Videos;
 
 namespace YoutubeDownloader.Core.Resolving;
 

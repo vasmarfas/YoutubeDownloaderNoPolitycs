@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Globalization;
 using Avalonia.Data.Converters;
-using YoutubeExplode.Common;
-using YoutubeExplode.Videos;
+using YoutubeExplodeNoPolytics.Common;
+using YoutubeExplodeNoPolytics.Videos;
 
 namespace YoutubeDownloader.Converters;
 

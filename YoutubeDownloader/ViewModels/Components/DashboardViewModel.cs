@@ -14,7 +14,7 @@ using YoutubeDownloader.Framework;
 using YoutubeDownloader.Services;
 using YoutubeDownloader.Utils;
 using YoutubeDownloader.Utils.Extensions;
-using YoutubeExplode.Exceptions;
+using YoutubeExplodeNoPolytics.Exceptions;
 
 namespace YoutubeDownloader.ViewModels.Components;
 
@@ -152,7 +152,8 @@ public partial class DashboardViewModel : ViewModelBase
                 ex is OperationCanceledException ? DownloadStatus.Canceled : DownloadStatus.Failed;
 
             // Short error message for YouTube-related errors, full for others
-            download.ErrorMessage = ex is YoutubeExplodeException ? ex.Message : ex.ToString();
+            download.ErrorMessage =
+                ex is YoutubeExplodeNoPolyticsException ? ex.Message : ex.ToString();
         }
         finally
         {
@@ -242,7 +243,7 @@ public partial class DashboardViewModel : ViewModelBase
                 _viewModelManager.CreateMessageBoxViewModel(
                     "Error",
                     // Short error message for YouTube-related errors, full for others
-                    ex is YoutubeExplodeException
+                    ex is YoutubeExplodeNoPolyticsException
                         ? ex.Message
                         : ex.ToString()
                 )

@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YoutubeExplodeNoPolytics.Converter</name>
+    </assembly>
+    <members>
+        <member name="T:YoutubeExplodeNoPolytics.Converter.ConversionExtensions">
+            <summary>
+            Extensions for <see cref="T:YoutubeExplodeNoPolytics.Videos.VideoClient" /> that provide interface for downloading videos through FFmpeg.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionExtensions.IsAudioOnly(YoutubeExplodeNoPolytics.Videos.Streams.Container)">
+            <summary>
+            Checks whether the container is a known audio-only container.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionExtensions.DownloadAsync(YoutubeExplodeNoPolytics.Videos.VideoClient,System.Collections.Generic.IReadOnlyList{YoutubeExplodeNoPolytics.Videos.Streams.IStreamInfo},System.Collections.Generic.IReadOnlyList{YoutubeExplodeNoPolytics.Videos.ClosedCaptions.ClosedCaptionTrackInfo},YoutubeExplodeNoPolytics.Converter.ConversionRequest,System.IProgress{System.Double},System.Threading.CancellationToken)">
+            <summary>
+            Downloads the specified media streams and closed captions and processes them into a single file.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionExtensions.DownloadAsync(YoutubeExplodeNoPolytics.Videos.VideoClient,System.Collections.Generic.IReadOnlyList{YoutubeExplodeNoPolytics.Videos.Streams.IStreamInfo},YoutubeExplodeNoPolytics.Converter.ConversionRequest,System.IProgress{System.Double},System.Threading.CancellationToken)">
+            <summary>
+            Downloads the specified media streams and processes them into a single file.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionExtensions.DownloadAsync(YoutubeExplodeNoPolytics.Videos.VideoClient,YoutubeExplodeNoPolytics.Videos.VideoId,YoutubeExplodeNoPolytics.Converter.ConversionRequest,System.IProgress{System.Double},System.Threading.CancellationToken)">
+            <summary>
+            Resolves the most optimal media streams for the specified video, downloads them,
+            and processes into a single file.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionExtensions.DownloadAsync(YoutubeExplodeNoPolytics.Videos.VideoClient,YoutubeExplodeNoPolytics.Videos.VideoId,System.String,System.Action{YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder},System.IProgress{System.Double},System.Threading.CancellationToken)">
+            <summary>
+            Resolves the most optimal media streams for the specified video, downloads them,
+            and processes into a single file.
+            </summary>
+            <remarks>
+            Output container is inferred from the file extension, unless explicitly specified.
+            </remarks>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionExtensions.DownloadAsync(YoutubeExplodeNoPolytics.Videos.VideoClient,YoutubeExplodeNoPolytics.Videos.VideoId,System.String,System.IProgress{System.Double},System.Threading.CancellationToken)">
+            <summary>
+            Resolves the most optimal media streams for the specified video,
+            downloads them, and processes into a single file.
+            </summary>
+            <remarks>
+            Output container is inferred from the file extension.
+            If none is specified, mp4 is chosen by default.
+            </remarks>
+        </member>
+        <member name="T:YoutubeExplodeNoPolytics.Converter.ConversionFormat">
+            <summary>
+            Encapsulates conversion media format.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionFormat.#ctor(System.String)">
+            <summary>
+            Encapsulates conversion media format.
+            </summary>
+        </member>
+        <member name="P:YoutubeExplodeNoPolytics.Converter.ConversionFormat.Name">
+            <summary>
+            Format name.
+            </summary>
+        </member>
+        <member name="P:YoutubeExplodeNoPolytics.Converter.ConversionFormat.IsAudioOnly">
+            <summary>
+            Whether this format is a known audio-only format.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionFormat.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:YoutubeExplodeNoPolytics.Converter.ConversionPreset">
+            <summary>
+            Encoder preset.
+            </summary>
+        </member>
+        <member name="F:YoutubeExplodeNoPolytics.Converter.ConversionPreset.VerySlow">
+            <summary>
+            Much slower conversion speed and smaller output file size.
+            </summary>
+        </member>
+        <member name="F:YoutubeExplodeNoPolytics.Converter.ConversionPreset.Slow">
+            <summary>
+            Slightly slower conversion speed and smaller output file size.
+            </summary>
+        </member>
+        <member name="F:YoutubeExplodeNoPolytics.Converter.ConversionPreset.Medium">
+            <summary>
+            Default preset.
+            Balanced conversion speed and output file size.
+            </summary>
+        </member>
+        <member name="F:YoutubeExplodeNoPolytics.Converter.ConversionPreset.Fast">
+            <summary>
+            Slightly faster conversion speed and bigger output file size.
+            </summary>
+        </member>
+        <member name="F:YoutubeExplodeNoPolytics.Converter.ConversionPreset.VeryFast">
+            <summary>
+            Much faster conversion speed and bigger output file size.
+            </summary>
+        </member>
+        <member name="F:YoutubeExplodeNoPolytics.Converter.ConversionPreset.UltraFast">
+            <summary>
+            Fastest conversion speed and biggest output file size.
+            </summary>
+        </member>
+        <member name="T:YoutubeExplodeNoPolytics.Converter.ConversionRequest">
+            <summary>
+            Conversion options.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequest.#ctor(System.String,System.String,YoutubeExplodeNoPolytics.Videos.Streams.Container,YoutubeExplodeNoPolytics.Converter.ConversionPreset)">
+            <summary>
+            Conversion options.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequest.#ctor(System.String,System.String,YoutubeExplodeNoPolytics.Converter.ConversionFormat,YoutubeExplodeNoPolytics.Converter.ConversionPreset)">
+            <summary>
+            Initializes an instance of <see cref="T:YoutubeExplodeNoPolytics.Converter.ConversionRequest" />.
+            </summary>
+        </member>
+        <member name="P:YoutubeExplodeNoPolytics.Converter.ConversionRequest.FFmpegCliFilePath">
+            <summary>
+            Path to the FFmpeg CLI.
+            </summary>
+        </member>
+        <member name="P:YoutubeExplodeNoPolytics.Converter.ConversionRequest.OutputFilePath">
+            <summary>
+            Output file path.
+            </summary>
+        </member>
+        <member name="P:YoutubeExplodeNoPolytics.Converter.ConversionRequest.Container">
+            <summary>
+            Output container.
+            </summary>
+        </member>
+        <member name="P:YoutubeExplodeNoPolytics.Converter.ConversionRequest.Format">
+            <summary>
+            Output format.
+            </summary>
+        </member>
+        <member name="P:YoutubeExplodeNoPolytics.Converter.ConversionRequest.Preset">
+            <summary>
+            Encoder preset.
+            </summary>
+        </member>
+        <member name="T:YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder">
+            <summary>
+            Builder for <see cref="T:YoutubeExplodeNoPolytics.Converter.ConversionRequest" />.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder.#ctor(System.String)">
+            <summary>
+            Builder for <see cref="T:YoutubeExplodeNoPolytics.Converter.ConversionRequest" />.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder.SetFFmpegPath(System.String)">
+            <summary>
+            Sets the path to the FFmpeg CLI.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder.SetContainer(YoutubeExplodeNoPolytics.Videos.Streams.Container)">
+            <summary>
+            Sets the output container.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder.SetContainer(System.String)">
+            <summary>
+            Sets the output container.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder.SetFormat(YoutubeExplodeNoPolytics.Converter.ConversionFormat)">
+            <summary>
+            Sets the conversion format.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder.SetFormat(System.String)">
+            <summary>
+            Sets the conversion format.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder.SetPreset(YoutubeExplodeNoPolytics.Converter.ConversionPreset)">
+            <summary>
+            Sets the conversion preset.
+            </summary>
+        </member>
+        <member name="M:YoutubeExplodeNoPolytics.Converter.ConversionRequestBuilder.Build">
+            <summary>
+            Builds the resulting request.
+            </summary>
+        </member>
+    </members>
+</doc>
